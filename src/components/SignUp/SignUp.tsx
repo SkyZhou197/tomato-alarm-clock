@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import axios from "../../config/axios";
 import "antd/dist/antd.css";
 import "./SignUp.scss";
+
 interface ISignUpState {
   account: string;
   password: string;
@@ -41,7 +42,7 @@ class SignUp extends React.Component<any, ISignUpState> {
         password,
         password_confirmation: passwordConformation
       });
-      console.log("成功");
+      this.props.history.push("/");
     } catch (e) {
       throw new Error(e);
     }
@@ -75,7 +76,7 @@ class SignUp extends React.Component<any, ISignUpState> {
           onChange={this.onChangePasswordConformation}
         />
 
-        <Button type="primary" className="loginButton" onClick={this.submit}>
+        <Button type="primary" className="signUpButton" onClick={this.submit}>
           注册
         </Button>
         <p>
