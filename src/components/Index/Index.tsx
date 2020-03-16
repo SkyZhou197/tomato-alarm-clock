@@ -1,7 +1,13 @@
 import * as React from "react";
-import { Button } from "antd";
+import { Menu, Dropdown } from "antd";
+import { DownOutlined, UserOutlined, LogoutOutlined } from "@ant-design/icons";
+import Todos from "../../components/Todos/Todos";
+import "antd/dist/antd.css";
+import "./Index.scss";
+
 import axios from "../../config/axios";
-import "antd/es/button/style/css";
+
+import history from "../../config/history";
 
 interface IRouter {
   history: any;
@@ -10,6 +16,24 @@ interface IRouter {
 interface IIndexState {
   user: any;
 }
+
+const logout = () => {
+  localStorage.setItem("x-token", "");
+  history.push("/login");
+};
+
+const menu = (
+  <Menu>
+    <Menu.Item key="1">
+      <UserOutlined />
+      个人设置
+    </Menu.Item>
+    <Menu.Item key="2" onClick={logout}>
+      <LogoutOutlined />
+      注销
+    </Menu.Item>
+  </Menu>
+);
 
 class Index extends React.Component<IRouter, IIndexState> {
   constructor(props: any) {
@@ -27,18 +51,21 @@ class Index extends React.Component<IRouter, IIndexState> {
     this.setState({ user: response.data });
   };
 
-  logout = () => {
-    localStorage.setItem("x-token", "");
-    this.props.history.push("/login");
-  };
-
   render() {
     return (
-      <div className="Component">
-        <p>欢迎，{this.state.user && this.state.user.account}</p>
-        <Button type="primary" onClick={this.logout}>
-          注销
-        </Button>
+      <div className="Index" id="Index">
+        <header>
+          <span className="logo">LOGO</span>
+          <Dropdown overlay={menu}>
+            <span>
+              {this.state.user && this.state.user.account}
+              <DownOutlined style={{ marginLeft: 8 }} />
+            </span>
+          </Dropdown>
+        </header>
+        <main>
+          <Todos />
+        </main>
       </div>
     );
   }
