@@ -4,7 +4,7 @@ import { EnterOutlined, DeleteOutlined } from "@ant-design/icons";
 import "./TodoItem.scss";
 import classNames from "classnames";
 import { connect } from "react-redux";
-import { editTodo, updateTodo } from "../../redux/actions";
+import { editTodo, updateTodo } from "../../redux/actions/todos";
 import axios from "../../config/axios";
 
 interface ITodoItemProps {

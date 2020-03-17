@@ -4,7 +4,7 @@ import TodoInput from "../../components/Todos/TodoInput";
 import TodoItem from "../../components/Todos/TodoItem";
 import axios from "../../config/axios";
 import "./Todos.scss";
-import { initTodos, updateTodo } from "../../redux/actions";
+import { initTodos, updateTodo } from "../../redux/actions/todos";
 
 interface ITodosState {
   todos: any[];

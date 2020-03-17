@@ -2,7 +2,7 @@ import * as React from "react";
 import { Input } from "antd";
 import { EnterOutlined } from "@ant-design/icons";
 import { connect } from "react-redux";
-import { addTodo } from "../../redux/actions";
+import { addTodo } from "../../redux/actions/todos";
 import axios from "../../config/axios";
 import "antd/dist/antd.css";
 
@@ -20,7 +20,6 @@ class TodoInput extends React.Component<ITodoInputProps, ITodoInputState> {
     this.state = {
       description: ""
     };
-    console.log(this.props);
   }
 
   onKeyUp = e => {
