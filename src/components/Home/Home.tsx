@@ -2,6 +2,7 @@ import * as React from "react";
 import { Menu, Dropdown } from "antd";
 import { DownOutlined, UserOutlined, LogoutOutlined } from "@ant-design/icons";
 import Todos from "../../components/Todos/Todos";
+import Tomatoes from "../../components/Tomatoes/Tomatoes";
 import "antd/dist/antd.css";
 import "./Home.scss";
 
@@ -64,6 +65,7 @@ class Home extends React.Component<IRouter, IIndexState> {
           </Dropdown>
         </header>
         <main>
+          <Tomatoes />
           <Todos />
         </main>
       </div>
