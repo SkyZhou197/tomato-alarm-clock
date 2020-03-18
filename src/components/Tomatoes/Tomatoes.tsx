@@ -3,11 +3,7 @@ import TomatoAction from "./TomatoAction";
 import TomatoList from "./TomatoList";
 import { connect } from "react-redux";
 import "./Tomatoes.scss";
-import {
-  addTomato,
-  initTomatoes,
-  updateTomato
-} from "../../redux/actions/tomatoes";
+import { addTomato, updateTomato } from "../../redux/actions/tomatoes";
 import axios from "../../config/axios";
 import _ from "lodash";
 import { format } from "date-fns";
@@ -22,10 +18,6 @@ interface ITomatoesProps {
 class Tomatoes extends React.Component<ITomatoesProps> {
   constructor(props) {
     super(props);
-  }
-
-  componentDidMount() {
-    this.getTomatoes();
   }
 
   get unfinishedTomato() {
@@ -44,15 +36,6 @@ class Tomatoes extends React.Component<ITomatoesProps> {
     });
     return obj;
   }
-
-  getTomatoes = async () => {
-    try {
-      const response = await axios.get("tomatoes");
-      this.props.initTomatoes(response.data.resources);
-    } catch (e) {
-      throw new Error(e);
-    }
-  };
 
   startTomato = async () => {
     try {
@@ -84,8 +67,7 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = {
   addTomato,
-  updateTomato,
-  initTomatoes
+  updateTomato
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Tomatoes);
