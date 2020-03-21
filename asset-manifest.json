@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/SkyZhou197/tomato-alarm-clock/login/static/css/main.64cb4fb9.chunk.css",
-    "main.js": "/SkyZhou197/tomato-alarm-clock/login/static/js/main.a36c7a6e.chunk.js",
-    "main.js.map": "/SkyZhou197/tomato-alarm-clock/login/static/js/main.a36c7a6e.chunk.js.map",
-    "runtime-main.js": "/SkyZhou197/tomato-alarm-clock/login/static/js/runtime-main.0aa1d509.js",
-    "runtime-main.js.map": "/SkyZhou197/tomato-alarm-clock/login/static/js/runtime-main.0aa1d509.js.map",
-    "static/css/2.1bd2ab2f.chunk.css": "/SkyZhou197/tomato-alarm-clock/login/static/css/2.1bd2ab2f.chunk.css",
-    "static/js/2.b33bed2f.chunk.js": "/SkyZhou197/tomato-alarm-clock/login/static/js/2.b33bed2f.chunk.js",
-    "static/js/2.b33bed2f.chunk.js.map": "/SkyZhou197/tomato-alarm-clock/login/static/js/2.b33bed2f.chunk.js.map",
-    "index.html": "/SkyZhou197/tomato-alarm-clock/login/index.html",
-    "precache-manifest.e4bdc7a27f37d0a62785c8d590aeb2ce.js": "/SkyZhou197/tomato-alarm-clock/login/precache-manifest.e4bdc7a27f37d0a62785c8d590aeb2ce.js",
-    "service-worker.js": "/SkyZhou197/tomato-alarm-clock/login/service-worker.js",
-    "static/css/2.1bd2ab2f.chunk.css.map": "/SkyZhou197/tomato-alarm-clock/login/static/css/2.1bd2ab2f.chunk.css.map",
-    "static/css/main.64cb4fb9.chunk.css.map": "/SkyZhou197/tomato-alarm-clock/login/static/css/main.64cb4fb9.chunk.css.map",
-    "static/js/2.b33bed2f.chunk.js.LICENSE.txt": "/SkyZhou197/tomato-alarm-clock/login/static/js/2.b33bed2f.chunk.js.LICENSE.txt"
+    "main.css": "/SkyZhou197/tomato-alarm-clock/static/css/main.64cb4fb9.chunk.css",
+    "main.js": "/SkyZhou197/tomato-alarm-clock/static/js/main.4c1dec67.chunk.js",
+    "main.js.map": "/SkyZhou197/tomato-alarm-clock/static/js/main.4c1dec67.chunk.js.map",
+    "runtime-main.js": "/SkyZhou197/tomato-alarm-clock/static/js/runtime-main.e81c0f0e.js",
+    "runtime-main.js.map": "/SkyZhou197/tomato-alarm-clock/static/js/runtime-main.e81c0f0e.js.map",
+    "static/css/2.1bd2ab2f.chunk.css": "/SkyZhou197/tomato-alarm-clock/static/css/2.1bd2ab2f.chunk.css",
+    "static/js/2.b33bed2f.chunk.js": "/SkyZhou197/tomato-alarm-clock/static/js/2.b33bed2f.chunk.js",
+    "static/js/2.b33bed2f.chunk.js.map": "/SkyZhou197/tomato-alarm-clock/static/js/2.b33bed2f.chunk.js.map",
+    "index.html": "/SkyZhou197/tomato-alarm-clock/index.html",
+    "precache-manifest.0d0f37c9599ee5fafddee034a19275f4.js": "/SkyZhou197/tomato-alarm-clock/precache-manifest.0d0f37c9599ee5fafddee034a19275f4.js",
+    "service-worker.js": "/SkyZhou197/tomato-alarm-clock/service-worker.js",
+    "static/css/2.1bd2ab2f.chunk.css.map": "/SkyZhou197/tomato-alarm-clock/static/css/2.1bd2ab2f.chunk.css.map",
+    "static/css/main.64cb4fb9.chunk.css.map": "/SkyZhou197/tomato-alarm-clock/static/css/main.64cb4fb9.chunk.css.map",
+    "static/js/2.b33bed2f.chunk.js.LICENSE.txt": "/SkyZhou197/tomato-alarm-clock/static/js/2.b33bed2f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0aa1d509.js",
+    "static/js/runtime-main.e81c0f0e.js",
     "static/css/2.1bd2ab2f.chunk.css",
     "static/js/2.b33bed2f.chunk.js",
     "static/css/main.64cb4fb9.chunk.css",
-    "static/js/main.a36c7a6e.chunk.js"
+    "static/js/main.4c1dec67.chunk.js"
   ]
 }
