@@ -40,7 +40,7 @@ instance.interceptors.response.use(
   error => {
     if (error.response.status === 401) {
       console.log("重定向");
-      window.location.href = "/login";
+
       history.push("/login");
     }
 

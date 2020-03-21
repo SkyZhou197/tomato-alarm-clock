@@ -2,6 +2,7 @@
   "name": "tomato-todo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zhouhaomin.top/tomato-alarm-clock",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -14,6 +15,7 @@
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
     "date-fns": "1.30.1",
+    "gh-pages": "^2.2.0",
     "history": "^4.10.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
@@ -27,6 +29,8 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

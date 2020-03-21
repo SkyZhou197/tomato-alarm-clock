@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Menu, Dropdown } from "antd";
-import { DownOutlined, UserOutlined, LogoutOutlined } from "@ant-design/icons";
+import { DownOutlined, LogoutOutlined } from "@ant-design/icons";
 import Todos from "../../components/Todos/Todos";
 import Tomatoes from "../../components/Tomatoes/Tomatoes";
 import Statistics from "../../components/Statistics/Statistics";
@@ -25,11 +25,7 @@ const logout = () => {
 
 const menu = (
   <Menu>
-    <Menu.Item key="1">
-      <UserOutlined />
-      个人设置
-    </Menu.Item>
-    <Menu.Item key="2" onClick={logout}>
+    <Menu.Item key="1" onClick={logout}>
       <LogoutOutlined />
       注销
     </Menu.Item>
@@ -79,7 +75,9 @@ class Home extends React.Component<any, IIndexState> {
     return (
       <div className="Home" id="Home">
         <header>
-          <span className="logo">LOGO</span>
+          <span className="logo">
+            <strong>番茄闹钟</strong>
+          </span>
           <Dropdown overlay={menu}>
             <span>
               {this.state.user && this.state.user.account}
