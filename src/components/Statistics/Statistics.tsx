@@ -2,7 +2,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 import "./Statistics.scss";
 import TodoHistory from "./TodoHistory/TodoHistory";
-
+import Polygon from "./Polygon";
 import { format } from "date-fns";
 import _ from "lodash";
 
@@ -29,6 +29,15 @@ class Statistics extends React.Component<IStatisticsProps> {
     return (
       <div className="Statistics" id="Statistics">
         <TodoHistory />
+        <ul>
+          <li>
+            任务历史 累计完成{this.finishedTodos.length}个任务
+            <Polygon
+              data={this.dailyTodos}
+              totalFinishedCount={this.finishedTodos.length}
+            />
+          </li>
+        </ul>
       </div>
     );
   }
