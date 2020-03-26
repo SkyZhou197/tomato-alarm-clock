@@ -44,7 +44,6 @@ class TodoHistory extends React.Component<ITodoHistoryProps> {
           <div className="summary">
             <p className="date">
               <span>{date}</span>
-              <span>周五</span>
             </p>
             <p className="finishedCount">
               完成了{this.dailyFinishedTodos[date].length}个任务
